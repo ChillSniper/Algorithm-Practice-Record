@@ -1,4 +1,5 @@
-public class Node {
+// Definition for a Node.
+class Node {
     int val;
     Node next;
     Node random;
@@ -9,3 +10,4 @@ public class Node {
         this.random = null;
     }
 }
+
