@@ -15,7 +15,7 @@ public class Main {
         // return r;
 
         // just test the time
-        if (root == null)
-            
+        
+       return null;     
     }
 }

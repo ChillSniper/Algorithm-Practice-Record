@@ -34,5 +34,13 @@ func isPalindrome(head *ListNode) bool {
 }
 
 func reverse(head *ListNode) *ListNode {
-
+	var top, cur *ListNode
+	top, cur = nil, head
+	for cur != nil {
+		nxt := cur.Next
+		cur.Next = top
+		top = cur
+		cur = nxt
+	}
+	return top
 }
