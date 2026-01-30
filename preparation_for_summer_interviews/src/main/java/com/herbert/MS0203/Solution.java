@@ -4,12 +4,15 @@ import com.herbert.Utils.ListNode;
 
 public class Solution {
     public void deleteNode(ListNode node) {
-        ListNode head = node;
-        while (head.next != null) {
-            if (head.next == node) {
-                head.next = head.next.next;
-                return ;
-            }
+        ListNode cur = node, pre = null;
+        while (cur.next != null){ 
+            
+            // 1, 2, 3, 4, 5, 6, 7, 8
+            
+            cur.val = cur.next.val;
+            pre = cur;
+            cur = cur.next;
         }
+        pre.next = null;
     }
 }
