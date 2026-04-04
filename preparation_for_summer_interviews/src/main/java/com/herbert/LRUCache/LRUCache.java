@@ -14,7 +14,7 @@ class SpNode {
     SpNode pre;
     SpNode aft;
     int val;
-    int key;    
+    int key;
     public SpNode(int key, int val) {
         this.key = key;
         this.val = val;
